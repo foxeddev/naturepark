@@ -13,8 +13,24 @@
   "resource_pack": {
     "load": ["src"]
   },
-  "pipeline": ["build.main"],
+  "pipeline": [
+    "build.main",
+    "beet.contrib.installation_advancement",
+    "beet.contrib.minify_function",
+    "beet.contrib.minify_json",
+    "beet.contrib.relative_function_path"
+  ],
   "meta": {
-    "generate_namespace": "template"
+    "generate_namespace": "template",
+    "installation_advancement": {
+      "icon": {
+        "id": "minecraft:paper",
+        "count": 1,
+        "components": {
+          "item_model": "template:icon"
+        }
+      },
+      "author_description": ""
+    }
   }
 }
