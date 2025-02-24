@@ -21,7 +21,7 @@ def pack_logo(ctx: Context):
     )
 
     ctx.assets[ctx.meta["generate_namespace"] + ":item/logo"] = Model(
-        {"parent": "item/generated", "textures": {"layer0": "create_packed:item/icon"}}
+        {"parent": "item/generated", "textures": {"layer0": ctx.meta["generate_namespace"] + ":item/logo"}}
     )
 
     ctx.assets[ctx.meta["generate_namespace"] + ":item/logo"] = Texture(source_path="src/pack.png")
