@@ -1,4 +1,5 @@
-from beet import Context
+from beet import Context, ItemModel, Model, Texture
+from PIL import Image
 
 
 def pack_logo(ctx: Context):
@@ -7,5 +8,20 @@ def pack_logo(ctx: Context):
 
     ctx.meta["installation_advancement"]["icon"] = {
         "id": "minecraft:paper",
-        "components": {"item_model": ctx.project_id + ":logo"},
+        "components": {"item_model": ctx.meta["generate_namespace"] + ":logo"},
     }
+
+    ctx.assets[ctx.meta["generate_namespace"] + ":logo"] = ItemModel(
+        {
+            "model": {
+                "type": "minecraft:model",
+                "model": ctx.meta["generate_namespace"] + ":item/logo",
+            }
+        }
+    )
+
+    ctx.assets[ctx.meta["generate_namespace"] + ":item/logo"] = Model(
+        {"parent": "item/generated", "textures": {"layer0": "create_packed:item/icon"}}
+    )
+
+    ctx.assets[ctx.meta["generate_namespace"] + ":item/logo"] = Texture(source_path="src/pack.png")
