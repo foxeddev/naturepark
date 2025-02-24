@@ -15,22 +15,13 @@
   },
   "pipeline": [
     "build.main",
+    "plugins.extend.installation_advancement.pack_logo",
     "beet.contrib.installation_advancement",
     "beet.contrib.minify_function",
     "beet.contrib.minify_json",
     "beet.contrib.relative_function_path"
   ],
   "meta": {
-    "generate_namespace": "template",
-    "installation_advancement": {
-      "icon": {
-        "id": "minecraft:paper",
-        "count": 1,
-        "components": {
-          "item_model": "template:icon"
-        }
-      },
-      "author_description": ""
-    }
+    "generate_namespace": "template"
   }
 }
