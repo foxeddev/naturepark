@@ -8,5 +8,5 @@ scoreboard objectives remove {{ generate_namespace }}
 # Remove Storage(s)
 
 # Disable the datapack
-datapack disable "file/{{ project_id }}_{{ project_version }}_datapack"
-datapack disable "file/{{ project_id }}_{{ project_version }}_datapack.zip"
+datapack disable "file/{{ project_id }}_{{ project_version }}_data_pack"
+datapack disable "file/{{ project_id }}_{{ project_version }}_data_pack.zip"
