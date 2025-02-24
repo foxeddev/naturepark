@@ -8,20 +8,25 @@ def pack_logo(ctx: Context):
 
     ctx.meta["installation_advancement"]["icon"] = {
         "id": "minecraft:paper",
-        "components": {"item_model": ctx.meta["generate_namespace"] + ":logo"},
+        "components": {"item_model": f"{ctx.meta["generate_namespace"]}:logo"},
     }
 
-    ctx.assets[ctx.meta["generate_namespace"] + ":logo"] = ItemModel(
+    ctx.assets[f"{ctx.meta["generate_namespace"]}:logo"] = ItemModel(
         {
             "model": {
                 "type": "minecraft:model",
-                "model": ctx.meta["generate_namespace"] + ":item/logo",
+                "model": f"{ctx.meta["generate_namespace"]}:item/logo",
             }
         }
     )
 
-    ctx.assets[ctx.meta["generate_namespace"] + ":item/logo"] = Model(
-        {"parent": "item/generated", "textures": {"layer0": ctx.meta["generate_namespace"] + ":item/logo"}}
+    ctx.assets[f"{ctx.meta["generate_namespace"]}:item/logo"] = Model(
+        {
+            "parent": "item/generated",
+            "textures": {"layer0": f"{ctx.meta["generate_namespace"]}:item/logo"},
+        }
     )
 
-    ctx.assets[ctx.meta["generate_namespace"] + ":item/logo"] = Texture(source_path="src/pack.png")
+    ctx.assets[f"{ctx.meta["generate_namespace"]}:item/logo"] = Texture(
+        source_path="src/pack.png"
+    )
