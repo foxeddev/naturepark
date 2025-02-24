@@ -1,12 +1,5 @@
-# Uninstalls this datapack
-#
-# Called by: Player
+# Commands in this file will run when the data pack gets uninstalled manually by a player.
 
 # Remove Scoreboard(s)
-scoreboard objectives remove {{ generate_namespace }}
 
 # Remove Storage(s)
-
-# Disable the datapack
-datapack disable "file/{{ project_id }}_{{ project_version }}_data_pack"
-datapack disable "file/{{ project_id }}_{{ project_version }}_data_pack.zip"
