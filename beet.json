@@ -19,9 +19,11 @@
     "plugins.install",
     "plugins.extend.installation_advancement.pack_logo",
     "beet.contrib.installation_advancement",
+    "beet.contrib.relative_function_path",
+    "mecha",
+    "bolt",
     "beet.contrib.minify_function",
-    "beet.contrib.minify_json",
-    "beet.contrib.relative_function_path"
+    "beet.contrib.minify_json"
   ],
   "meta": {
     "generate_namespace": "template"
