@@ -1,5 +1,4 @@
 from beet import Context, ItemModel, Model, Texture
-from PIL import Image
 
 
 def pack_logo(ctx: Context):
