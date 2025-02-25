@@ -2,6 +2,12 @@ from beet import Context, Function
 
 
 def beet_default(ctx: Context):
+    if ctx.data.functions.get(f"{ctx.meta['generate_namespace']}:install") == None:
+        ctx.generate(f"{ctx.meta['generate_namespace']}:install", Function([]))
+
+    if ctx.data.functions.get(f"{ctx.meta['generate_namespace']}:uninstall") == None:
+        ctx.generate(f"{ctx.meta['generate_namespace']}:uninstall", Function([]))
+
     ctx.data.functions[f"{ctx.meta['generate_namespace']}:load"].append(
         [
             f"scoreboard objectives add {ctx.meta['generate_namespace']} dummy",
