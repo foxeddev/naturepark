@@ -4,6 +4,9 @@
   "description": "A pre-configured template to quickly set up your Minecraft Beet project.",
   "author": "Rotsteinfuchs",
   "output": "build",
+  "require": [
+    "bolt"
+  ],
   "data_pack": {
     "load": ["src"],
     "render": {
@@ -21,7 +24,6 @@
     "beet.contrib.installation_advancement",
     "beet.contrib.relative_function_path",
     "mecha",
-    "bolt",
     "beet.contrib.minify_function",
     "beet.contrib.minify_json"
   ],
