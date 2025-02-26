@@ -2,7 +2,10 @@ from beet import Context, ItemModel, Model, Texture
 
 
 def pack_logo(ctx: Context):
-    namespace = ctx.meta["generate_namespace"]
+    namespace = ctx.meta.get("default_namespace")
+
+    if not namespace:
+        raise ValueError("'default_namespace' key missing in Beet meta.")
 
     if "installation_advancement" not in ctx.meta:
         ctx.meta["installation_advancement"] = {}

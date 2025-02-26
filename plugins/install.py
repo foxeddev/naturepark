@@ -2,7 +2,7 @@ from beet import Context, Function
 
 
 def beet_default(ctx: Context):
-    namespace = ctx.meta["generate_namespace"]
+    namespace = ctx.meta.get("default_namespace")
 
     if ctx.data.functions.get(f"{namespace}:install") == None:
         ctx.generate(f"{namespace}:install", Function([]))

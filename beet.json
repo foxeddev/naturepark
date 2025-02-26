@@ -26,6 +26,9 @@
     "beet.contrib.minify_json"
   ],
   "meta": {
-    "generate_namespace": "template"
+    "default_namespace": "template",
+    "project_namespaces": [
+      "template"
+    ]
   }
 }
