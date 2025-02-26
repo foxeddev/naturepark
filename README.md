@@ -1,11 +1,11 @@
 # Minecraft Beet Project Template
 
-A pre-configured GitHub template to quickly set up your [Minecraft Beet](https://www.github.com/mcbeet/beet) project.
+A pre-configured GitHub template to quickly set up your [MCBeet](https://www.github.com/mcbeet) project.
 
 ## Features
 
-- Premade VSCode task for Beet project building and real-time updates
-- Most important files and folders for a quick start
+- Premade VSCode task for automated Beet project building
+- Including Beet plugins like Mecha and Bolt
 - `.gitignore` template for Beet, Python and Visual Studio Code
 - Multiplayer / Server support
 
@@ -26,13 +26,18 @@ pip install -r requirements.txt
 
 4. Change `template` to your project's namespace.
 5. **Done!** You can now add your custom functions, textures, and other assets.
+6. Link Beet to your Minecraft installation with
+
+```sh
+beet link --datapack <your-datapack-folder>
+```
 
 ## Usage
 
 Build and update your project using Beet:
 
 ```sh
-beet watch --link
+beet watch
 ```
 
 If you are using VSCode, this should be done automatically.
@@ -41,12 +46,6 @@ Reload the datapack in-game with:
 
 ```mcfunction
 /reload
-```
-
-Run your custom functions using:
-
-```mcfunction
-/function <namespace>:<function>
 ```
 
 ## License
