@@ -50,5 +50,4 @@ Run your custom functions using:
 ```
 
 ## License
-
-[![License](https://img.shields.io/github/license/rotsteinfuchs/beet-template?style=for-the-badge)](LICENSE)
+This project is licensed under [MIT](LICENSE).
