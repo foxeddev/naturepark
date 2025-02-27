@@ -1,12 +1,10 @@
 {
-  "name": "Beet Template",
+  "name": "Nature Park",
   "version": "1.0.0",
-  "description": "A pre-configured template to quickly set up your Minecraft Beet project.",
+  "description": "",
   "author": "Rotsteinfuchs",
   "output": "build",
-  "require": [
-    "bolt"
-  ],
+  "require": ["bolt"],
   "data_pack": {
     "load": ["src"],
     "render": {
@@ -27,9 +25,7 @@
     "beet.contrib.minify_json"
   ],
   "meta": {
-    "default_namespace": "template",
-    "project_namespaces": [
-      "template"
-    ]
+    "default_namespace": "nature_park",
+    "project_namespaces": ["nature_park"]
   }
 }
