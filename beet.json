@@ -25,7 +25,7 @@
     "beet.contrib.minify_json"
   ],
   "meta": {
-    "default_namespace": "nature_park",
-    "project_namespaces": ["nature_park"]
+    "default_namespace": "naturepark",
+    "project_namespaces": ["naturepark"]
   }
 }
