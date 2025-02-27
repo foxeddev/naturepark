@@ -3,3 +3,5 @@
 # Create Scoreboard(s)
 
 # Create Storage(s)
+
+function template:msg/info {msg:"Data pack installed: {{ project_name }}"}

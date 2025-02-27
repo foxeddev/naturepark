@@ -19,7 +19,6 @@
   "pipeline": [
     "build.main",
     "plugins.function_tags",
-    "plugins.install",
     "plugins.extend.installation_advancement.pack_logo",
     "beet.contrib.installation_advancement",
     "beet.contrib.relative_function_path",
