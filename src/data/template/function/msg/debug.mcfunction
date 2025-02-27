@@ -1,0 +1,1 @@
+$tellraw @a [{"hoverEvent":{"action":"show_text","contents":"{{ project_id }}_{{ project_version }}_data_pack\n{{ project_description }}\nAuthor: {{ project_author }}\nVersion: {{ project_version }}"},"text":"[{{ project_name }}]"},{"hoverEvent":{"action":"show_text","contents":""},"color":"gray","text":"$(msg)"}]
