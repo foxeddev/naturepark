@@ -1,9 +1,7 @@
 # Commands in this file will run once when the data pack gets installed.
 
-function ctf:install
-
 # Create Scoreboard(s)
+scoreboard objectives add ctf dummy
 
 # Create Storage(s)
 
-function {{ default_namespace }}:msg/info {msg:"Data pack installed: {{ project_name }}"}

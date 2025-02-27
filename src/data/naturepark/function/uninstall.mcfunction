@@ -1,5 +1,7 @@
 # Commands in this file will run when the data pack gets uninstalled manually by a player.
 
+function ctf:uninstall
+
 # Remove Scoreboard(s)
 
 # Remove Storage(s)
