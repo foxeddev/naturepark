@@ -23,8 +23,16 @@
                   "Invulnerable": 1,
                   "Invisible": 1,
                   "PersistenceRequired": 1,
-                  "Tags": ["ctf.banner_spawner_red"]
+                  "Tags": ["ctf.red_flag_spawner"]
                 }
+              },
+              "minecraft:can_place_on": {
+                "predicates": [
+                  {
+                    "blocks": "#"
+                  }
+                ],
+                "show_in_tooltip": false
               }
             },
             {

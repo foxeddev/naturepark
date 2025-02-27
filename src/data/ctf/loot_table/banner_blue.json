@@ -23,29 +23,17 @@
                   "Invulnerable": 1,
                   "Invisible": 1,
                   "PersistenceRequired": 1,
-                  "Tags": ["ctf.banner_spawner_blue"]
+                  "Tags": ["ctf.blue_flag_spawner"]
+                },
+                "minecraft:can_place_on": {
+                  "predicates": [
+                    {
+                      "blocks": "#"
+                    }
+                  ],
+                  "show_in_tooltip": false
                 }
               }
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "color": "blue",
-                  "italic": false,
-                  "text": "█ "
-                },
-                {
-                  "color": "white",
-                  "italic": false,
-                  "text": "Blue Flag"
-                },
-                {
-                  "color": "blue",
-                  "italic": false,
-                  "text": " █"
-                }
-              ]
             }
           ]
         }
