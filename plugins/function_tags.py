@@ -7,11 +7,17 @@ def beet_default(ctx: Context):
     if not namespaces:
         raise ValueError("'project_namespaces' key missing in Beet meta.")
 
+    if not ctx.data.function_tags.get("minecraft:load"):
+        ctx.data.function_tags["minecraft:load"] = FunctionTag()
+
+    if not ctx.data.function_tags.get("minecraft:tick"):
+        ctx.data.function_tags["minecraft:tick"] = FunctionTag()
+
     for namespace in namespaces:
-        ctx.data.function_tags[f"{namespace}:load"] = FunctionTag(
-            {"values": [f"{namespace}:load"]}
+        ctx.data.function_tags["minecraft:load"].append(
+            FunctionTag({"values": [f"{namespace}:load"]})
         )
 
-        ctx.data.function_tags[f"{namespace}:tick"] = FunctionTag(
-            {"values": [f"{namespace}:tick"]}
+        ctx.data.function_tags["minecraft:tick"].append(
+            FunctionTag({"values": [f"{namespace}:tick"]})
         )
