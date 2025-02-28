@@ -1,0 +1,1 @@
+$give @s item_frame[entity_data={id:"minecraft:item_frame",Item:{id:"minecraft:structure_block",count:1,components:{"minecraft:custom_data":{structure:{id:$(id)}}}},Fixed:1b,Tags:["ctf.create_structure_interface"]},custom_name='{"color":"$(color)","italic":false,"text":"Place $(name)"}',item_model="$(item_model)"] 1
