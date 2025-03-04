@@ -181,6 +181,7 @@ cython_debug/
 .pypirc
 
 ### VisualStudioCode ###
+
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -195,6 +196,7 @@ cython_debug/
 *.vsix
 
 ### VisualStudioCode Patch ###
+
 # Ignore all local history of files
 .history
 .ionide
