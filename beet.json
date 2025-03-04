@@ -4,9 +4,7 @@
   "description": "A pre-configured template to quickly set up your Minecraft Beet project.",
   "author": "Rotsteinfuchs",
   "output": "build",
-  "require": [
-    "bolt"
-  ],
+  "require": ["bolt"],
   "data_pack": {
     "load": ["src"],
     "render": {
@@ -28,8 +26,6 @@
   ],
   "meta": {
     "default_namespace": "template",
-    "project_namespaces": [
-      "template"
-    ]
+    "project_namespaces": ["template"]
   }
 }
