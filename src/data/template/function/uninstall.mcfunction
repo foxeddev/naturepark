@@ -4,7 +4,7 @@
 
 # Remove Storage(s)
 
-scoreboard objectives remove {{ default_namespace }}
+scoreboard objectives remove template
 function msg/info {msg:"Data pack uninstalled!"}
-datapack disable "file/{ctx.project_id}_{ctx.project_version}_data_pack"
-datapack disable "file/{ctx.project_id}_{ctx.project_version}_data_pack.zip"
+datapack disable "file/{{ project_id }}_{{ project_version }}_data_pack"
+datapack disable "file/{{ project_id }}_{{ project_version }}_data_pack.zip"
