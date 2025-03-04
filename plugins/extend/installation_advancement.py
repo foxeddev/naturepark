@@ -1,7 +1,7 @@
 from typing import Optional
 
 from beet import Context, ItemModel, Model, Texture, PluginOptions, configurable
-from beet.core.utils import JsonDict, TextComponent, normalize_string
+from beet.core.utils import normalize_string
 
 
 class PackLogoOptions(PluginOptions):
