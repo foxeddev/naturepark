@@ -1,1 +1,1 @@
-function ctf:config/interface/tick
+function ctf:structure/tick
