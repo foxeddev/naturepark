@@ -4,4 +4,7 @@ execute as @a[nbt={SelectedItem:{components:{"minecraft:custom_data":{feat:{ball
 
 execute as @a[tag=feat.has_ballon] unless entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{feat:{ballon:{}}}}}}]:
     tag @s remove feat.has_ballon
-    function feat:ballon/destroy with entity @s
+    function feat:ballon/item_deselected with entity @s
+
+execute as @e[type=pig,tag=feat.ballon] at @s unless data entity @s leash:
+    function feat:ballon/destroy

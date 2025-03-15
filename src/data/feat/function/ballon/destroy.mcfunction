@@ -1,1 +1,3 @@
-$execute as @e[type=pig,tag=feat.ballon] if data entity @s {leash:{UUID:$(UUID)}} run function feat:ballon/destroy/nested_execute_0
+execute on passengers run kill
+kill @e[type=item,nbt={Item:{id:"minecraft:lead"}},limit=1,sort=nearest]
+kill
