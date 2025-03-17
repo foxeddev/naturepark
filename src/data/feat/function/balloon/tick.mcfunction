@@ -1,7 +1,7 @@
 execute as @a run function feat:balloon/update_tag with entity @s
 
 execute as @a[nbt={SelectedItem:{components:{"minecraft:custom_data":{feat:{balloon:{}}}}}},tag=!feat.has_balloon] at @s run \
-function feat:balloon/spawn with entity @s SelectedItem.components.minecraft:custom_data.feat.balloon
+function feat:balloon/spawn with entity @s
 
 execute as @a[tag=feat.has_balloon] run function feat:balloon/item_updated with entity @s
 
