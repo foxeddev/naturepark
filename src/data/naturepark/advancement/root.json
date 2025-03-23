@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "minecraft:textures/block/moss_block.png",
+    "description": "",
+    "icon": {
+      "count": 1,
+      "id": "minecraft:oak_sapling"
+    },
+    "show_toast": false,
+    "title": "Nature Park"
+  },
+  "requirements": [["tick"]]
+}
