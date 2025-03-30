@@ -1,1 +1,0 @@
-function ctf:structure/tick
