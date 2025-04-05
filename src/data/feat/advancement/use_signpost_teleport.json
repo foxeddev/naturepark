@@ -1,0 +1,15 @@
+{
+  "parent": "naturepark:root",
+  "display": {
+    "icon": {
+      "id": "minecraft:oak_hanging_sign"
+    },
+    "title": "Professional Pathfinding",
+    "description": "Use a signpost to travel quickly."
+  },
+  "criteria": {
+    "none": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

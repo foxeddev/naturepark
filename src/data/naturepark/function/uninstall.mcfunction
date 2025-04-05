@@ -4,6 +4,6 @@
 
 # Remove Storage(s)
 
-scoreboard objectives remove {{ default_namespace }}
+scoreboard objectives remove naturepark
 datapack disable "file/{{ project_id }}_{{ project_version }}_data_pack"
 datapack disable "file/{{ project_id }}_{{ project_version }}_data_pack.zip"
