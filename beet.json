@@ -27,6 +27,6 @@
   ],
   "meta": {
     "default_namespace": "naturepark",
-    "project_namespaces": ["naturepark"]
+    "project_namespaces": ["naturepark", "feat", "ctf"]
   }
 }
