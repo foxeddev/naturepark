@@ -6,4 +6,4 @@ function ctf:install
 
 # Create Storage(s)
 
-function {{ default_namespace }}:msg/info {msg:"Data pack installed: {{ project_name }}"}
+function ./msg/info {msg:"Data pack installed: [Nature Park]"}

@@ -1,7 +1,5 @@
 # Commands in this file will run when the world loads, the data pack gets enabled or after a reload.
 
-scoreboard objectives add {{ default_namespace }} dummy
-unless score #installed {{ default_namespace }} matches 1 run function ./install
-scoreboard players set #installed {{ default_namespace }} 1
-
-schedule function feat:balloon/load 1s append
+scoreboard objectives add naturepark dummy
+unless score #installed naturepark matches 1 run function ./install
+scoreboard players set #installed naturepark 1

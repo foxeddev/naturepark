@@ -1,1 +1,3 @@
-$function feat:signpost/teleport with storage feat:signpost/locations locations.$(to)
+# Usage: `function feat:signpost/tp {to:<location_id>}`
+
+$function ./teleport {to:$(to)}
