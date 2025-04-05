@@ -20,7 +20,6 @@
     "plugins.function_tags",
     "plugins.extend.installation_advancement.pack_logo",
     "beet.contrib.installation_advancement",
-    "beet.contrib.relative_function_path",
     "mecha",
     "beet.contrib.minify_function",
     "beet.contrib.minify_json"
