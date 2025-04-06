@@ -1,3 +1,9 @@
+append function_tag minecraft:load {
+    "values": [
+        "template:load"
+    ]
+}
+
 # Commands in this file will run when the world loads, the data pack gets enabled or after a reload.
 
 scoreboard objectives add template dummy
