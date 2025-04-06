@@ -6,20 +6,15 @@
   "output": "build",
   "require": ["bolt"],
   "data_pack": {
-    "load": ["src"],
-    "render": {
-      "functions": ["*"]
-    }
+    "load": ["src"]
   },
   "resource_pack": {
     "load": ["src"]
   },
   "pipeline": [
     "build.main",
-    "plugins.function_tags",
-    "plugins.extend.installation_advancement",
     "beet.contrib.installation_advancement",
-    "beet.contrib.relative_function_path",
+    "plugins.advancement_icon",
     "mecha",
     "beet.contrib.minify_function",
     "beet.contrib.minify_json"
