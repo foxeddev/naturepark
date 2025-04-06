@@ -25,12 +25,13 @@ A pre-configured GitHub template to quickly set up your [MCBeet](https://www.git
    ```
 
 4. Change `template` to your project's namespace.
-5. **Done!** You can now add your custom functions, textures, and other assets.
 6. Link Beet to your Minecraft installation with
 
    ```sh
-   beet link --datapack <your-datapack-folder>
+   beet link
    ```
+
+5. **Done!** You can now add your custom functions, textures, and other assets.
 
 ## Usage
 
