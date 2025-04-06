@@ -3,6 +3,9 @@
 # Beet cache
 .beet_cache/
 
+# Beet output
+build/
+
 ### Python ###
 
 # Byte-compiled / optimized / DLL files
