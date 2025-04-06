@@ -4,17 +4,18 @@ from beet import Context, ItemModel, Model, Texture, PluginOptions, configurable
 from beet.core.utils import normalize_string
 
 
-class PackLogoOptions(PluginOptions):
+class AdvancementIconOptions(PluginOptions):
     pack_namespace: Optional[str] = None
     texture_source: Optional[str] = "src/pack.png"
 
 
 def beet_default(ctx: Context):
-    ctx.require(pack_logo)
+    ctx.require(advancement_icon)
 
 
-@configurable(validator=PackLogoOptions)
-def pack_logo(ctx: Context, opts: PackLogoOptions):
+@configurable(validator=AdvancementIconOptions)
+def advancement_icon(ctx: Context, opts: AdvancementIconOptions):
+
     namespace = opts.pack_namespace or normalize_string("ctx.project_id")
 
     if "installation_advancement" not in ctx.meta:
