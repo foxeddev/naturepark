@@ -1,1 +1,0 @@
-function ./signpost/load
