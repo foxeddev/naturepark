@@ -4,4 +4,4 @@
 
 # Create Storage(s)
 
-function template:msg/info {msg:"Data pack installed!"}
+function ./msg/info {msg:"Data pack installed!"}
