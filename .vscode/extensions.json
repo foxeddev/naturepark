@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "mikoz.black-py",
+    "mcbeet.vscode-beet",
+    "Misodee.vscode-nbt",
+    "MinecraftCommands.syntax-mcfunction"
+  ],
+  "unwantedRecommendations": ["SPGoding.datapack-language-server"]
+}
