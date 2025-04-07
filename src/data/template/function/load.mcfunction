@@ -1,8 +1,4 @@
-append function_tag minecraft:load {
-    "values": [
-        "template:load"
-    ]
-}
+#!tag "minecraft:load"
 
 # Commands in this file will run when the world loads, the data pack gets enabled or after a reload.
 
