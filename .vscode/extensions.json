@@ -2,7 +2,7 @@
   "recommendations": [
     "mikoz.black-py",
     "mcbeet.vscode-beet",
-    "Misodee.vscode-nbt",
-    "MinecraftCommands.syntax-mcfunction"
-  ]
+    "amandin.dpc-pack"
+  ],
+  "unwantedRecommendations": ["SPGoding.datapack-language-server"]
 }

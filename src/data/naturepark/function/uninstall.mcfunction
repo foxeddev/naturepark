@@ -7,5 +7,6 @@ function ctf:uninstall
 # Remove Storage(s)
 
 scoreboard objectives remove naturepark
+tellraw @a "Data pack uninstalled: [Nature Park]"
 datapack disable "file/{{ project_id }}_{{ project_version }}_data_pack"
 datapack disable "file/{{ project_id }}_{{ project_version }}_data_pack.zip"

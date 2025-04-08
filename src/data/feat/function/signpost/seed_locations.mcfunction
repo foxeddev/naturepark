@@ -1,3 +1,5 @@
+#!tag "minecraft:load"
+
 data remove storage feat:signpost locations
 data merge storage ./ {
     "locations": {

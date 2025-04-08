@@ -1,3 +1,5 @@
+#!tag "minecraft:tick"
+
 # Spawn balloon if player has item
 
 execute as @a[nbt={SelectedItem:{components:{"minecraft:custom_data":{feat:{balloon:{}}}}}},tag=!feat.has_balloon]:

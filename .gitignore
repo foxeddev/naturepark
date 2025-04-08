@@ -3,6 +3,9 @@
 # Beet cache
 .beet_cache/
 
+# Beet output
+build/
+
 ### Python ###
 
 # Byte-compiled / optimized / DLL files
@@ -181,6 +184,7 @@ cython_debug/
 .pypirc
 
 ### VisualStudioCode ###
+
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -195,6 +199,7 @@ cython_debug/
 *.vsix
 
 ### VisualStudioCode Patch ###
+
 # Ignore all local history of files
 .history
 .ionide

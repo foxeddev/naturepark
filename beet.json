@@ -5,7 +5,7 @@
   "description": "",
   "author": "Rotsteinfuchs",
   "output": "build",
-  "require": ["bolt"],
+  "require": ["bolt", "beet.contrib.inline_function_tag"],
   "data_pack": {
     "load": ["src"],
     "render": {
@@ -17,15 +17,11 @@
   },
   "pipeline": [
     "build.main",
-    "plugins.function_tags",
-    "plugins.extend.installation_advancement.pack_logo",
     "beet.contrib.installation_advancement",
+    "plugins.advancement_icon",
     "mecha",
     "beet.contrib.minify_function",
     "beet.contrib.minify_json"
   ],
-  "meta": {
-    "default_namespace": "naturepark",
-    "project_namespaces": ["naturepark", "feat", "ctf"]
-  }
+  "meta": {}
 }
