@@ -1,8 +1,4 @@
-append function_tag minecraft:tick {
-    "values": [
-        "feat:balloon/tick"
-    ]
-}
+#!tag "minecraft:tick"
 
 # Spawn balloon if player has item
 

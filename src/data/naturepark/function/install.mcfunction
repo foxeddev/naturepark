@@ -4,4 +4,4 @@
 
 # Create Storage(s)
 
-function ./msg/info {msg:"Data pack installed: [Nature Park]"}
+tellraw @a {"text":"Data pack installed: [Nature Park]","color":"green"}

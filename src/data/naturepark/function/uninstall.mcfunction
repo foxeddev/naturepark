@@ -5,6 +5,6 @@
 # Remove Storage(s)
 
 scoreboard objectives remove naturepark
-function ./msg/info {msg:"Data pack uninstalled!"}
+tellraw @a "Data pack uninstalled: [Nature Park]"
 datapack disable "file/{{ project_id }}_{{ project_version }}_data_pack"
 datapack disable "file/{{ project_id }}_{{ project_version }}_data_pack.zip"

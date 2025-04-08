@@ -5,9 +5,12 @@
   "description": "",
   "author": "Rotsteinfuchs",
   "output": "build",
-  "require": ["bolt"],
+  "require": ["bolt", "beet.contrib.inline_function_tag"],
   "data_pack": {
-    "load": ["src"]
+    "load": ["src"],
+    "render": {
+      "functions": ["*"]
+    }
   },
   "resource_pack": {
     "load": ["src"]
