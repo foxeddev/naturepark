@@ -10,4 +10,4 @@ jobs:
       - uses: mcbeet/check-commands@v1.1.1
         with:
           source: src
-          minecraft: 1.21.4
+          minecraft: "1.21.4"
