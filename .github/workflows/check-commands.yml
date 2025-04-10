@@ -1,0 +1,13 @@
+# .github/workflows/check-commands.yml
+name: Check commands
+on: [push, pull_request]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: mcbeet/check-commands@v1.1.1
+        with:
+          source: src
+          minecraft: 1.21.4
