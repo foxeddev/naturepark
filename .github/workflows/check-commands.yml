@@ -12,8 +12,7 @@ jobs:
 
       - name: Install beet
         run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install beet bolt bolt-expressions mecha
 
       - name: Build with beet
         run: |
