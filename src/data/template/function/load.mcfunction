@@ -5,3 +5,5 @@
 scoreboard objectives add template dummy
 execute unless score #installed template matches 1 run function ./install
 scoreboard players set #installed template 1
+
+this is incorrect
