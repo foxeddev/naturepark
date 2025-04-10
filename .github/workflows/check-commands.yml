@@ -1,19 +1,22 @@
-name: Check commands
+name: Build Datapack with beet
+
 on: [push, pull_request]
 
 jobs:
-  check:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Install Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: "3.x"
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-      - name: Install beet
-        run: |
-          pip install beet bolt bolt-expressions mecha
+      - name: Set up Python
+        uses: actions/setup-python@v5.5.0
 
-      - name: Build with beet
+      - name: Install dependencies
         run: |
-          beet build
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run beet build
+        run: beet build
