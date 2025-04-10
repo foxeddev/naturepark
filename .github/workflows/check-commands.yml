@@ -1,12 +1,24 @@
-# .github/workflows/check-commands.yml
-name: Check commands
+name: Build Datapack with beet
+
 on: [push, pull_request]
 
 jobs:
-  check:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      - uses: mcbeet/check-commands@main
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python 3.13
+        uses: actions/setup-python@v5
         with:
-          source: src
+          python-version: '3.13'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Build with beet
+        run: beet build
