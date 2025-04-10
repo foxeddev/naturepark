@@ -1,0 +1,12 @@
+# .github/workflows/check-commands.yml
+name: Check commands
+on: [push, pull_request]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: mcbeet/check-commands@main
+        with:
+          source: src
