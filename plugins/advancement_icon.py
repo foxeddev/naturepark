@@ -16,7 +16,7 @@ def beet_default(ctx: Context):
 @configurable(validator=AdvancementIconOptions)
 def advancement_icon(ctx: Context, opts: AdvancementIconOptions):
 
-    namespace = opts.pack_namespace or normalize_string("ctx.project_id")
+    namespace = opts.pack_namespace or normalize_string(ctx.project_id)
 
     if "installation_advancement" not in ctx.meta:
         ctx.meta["installation_advancement"] = {}
