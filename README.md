@@ -1,17 +1,23 @@
 # Minecraft Beet Project Template
 
-A pre-configured GitHub template to quickly set up your [MCBeet](https://www.github.com/mcbeet) project.
+A pre-configured GitHub template to quickly set up your [Beet](https://www.github.com/mcbeet/beet) project.
 
 ## Features
 
 - Premade VSCode task for automated Beet project building
-- Including Beet plugins like Mecha and Bolt
-- `.gitignore` template for Beet, Python and Visual Studio Code
+
+- Beet extensions like [Mecha](https://github.com/mcbeet/mecha), [Bolt](https://github.com/mcbeet/bolt), and [datapack installation advancements](plugins/advancement_icon.py)
+
+- GitHub Workflow for automated error detection
+
+- `.gitignore` template for Beet, Python, and Visual Studio Code
+
 - Multiplayer / Server support
 
 ## Installation
 
 1. Click "Use this template" on GitHub to create a new repository.
+
 2. Clone your new repository to your device:
 
    ```sh
@@ -25,6 +31,7 @@ A pre-configured GitHub template to quickly set up your [MCBeet](https://www.git
    ```
 
 4. Change `template` to your project's namespace.
+
 5. Link Beet to your Minecraft installation with
 
    ```sh
