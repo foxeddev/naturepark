@@ -21,3 +21,7 @@ execute as @a[tag=feat.has_balloon] unless entity @s[nbt={SelectedItem:{componen
 # Remove all balloons without lead
 
 execute as @e[type=pig,tag=feat.balloon] at @s unless data entity @s leash run function ./destroy
+
+# Update tags
+execute as @a[tag=feat.has_balloon] with entity @s:
+    $execute unless entity @e[type=pig,tag=feat.balloon,nbt={leash:{UUID:$(UUID)}}] run tag @s remove feat.has_balloon
