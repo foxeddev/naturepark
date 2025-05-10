@@ -15,7 +15,7 @@ execute as @a[tag=feat.has_balloon] with entity @s:
 # Remove balloon if player doesn't have item
 
 execute as @a[tag=feat.has_balloon] unless entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{feat:{balloon:{}}}}}}] with entity @s:
-    $execute as @e[type=pig,tag=feat.balloon,nbt={leash:{UUID:$(UUID)}}] run function ./destroy
+    $execute as @e[type=pig,tag=feat.balloon,nbt={leash:{UUID:$(UUID)}}] run function feat:balloon/destroy
     tag @s remove feat.has_balloon
 
 # Remove all balloons without lead
