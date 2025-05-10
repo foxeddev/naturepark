@@ -1,6 +1,6 @@
-# Commands in this file will run when the data pack gets uninstalled manually by a player.
+#!tag "naturepark:uninstall"
 
-function #naturepark:uninstall
+# Commands in this file will run when the data pack gets uninstalled manually by a player.
 
 scoreboard objectives remove naturepark
 tellraw @a "Data pack uninstalled: [Nature Park]"
