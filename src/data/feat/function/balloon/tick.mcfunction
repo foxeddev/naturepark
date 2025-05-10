@@ -10,7 +10,7 @@ execute as @a[nbt={SelectedItem:{components:{"minecraft:custom_data":{feat:{ball
 
 execute as @a[tag=feat.has_balloon] with entity @s:
     $execute as @e[type=pig,tag=feat.balloon,nbt={leash:{UUID:$(UUID)}}] on passengers run \
-    data modify entity @s block_state set from entity @a[nbt={UUID:$(UUID)},limit=1] SelectedItem.components.minecraft:custom_data.feat.balloon.block
+        data modify entity @s block_state set from entity @a[nbt={UUID:$(UUID)},limit=1] SelectedItem.components.minecraft:custom_data.feat.balloon.block
 
 # Remove balloon if player doesn't have item
 
