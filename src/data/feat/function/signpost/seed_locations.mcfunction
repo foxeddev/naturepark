@@ -3,7 +3,8 @@
 data remove storage feat:signpost locations
 data merge storage ./ {
     "locations": {
-        "spawn": {"array": [0.5, 64.0, 0.5], "string": "0.5 64.0 0.5"},
-        "sky": {"array": [0.5, 256.0, 0.5], "string": "0.5 256.0 0.5"},
+        "origin": {"name": "World Origin", "array": [0, 64, 0], "string": "0 64 0"},
+        "headquarters": {"name": "Headquarters", "array": [-101, 71, -189], "string": "-101 71 -189"},
+        "ctf.snowy_settlements": {"name": "Snowy Settlements | CTF Map", "array": [-32, 67, -256], "string": "-32 67 -256"},
     }
 }
