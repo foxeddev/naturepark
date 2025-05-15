@@ -4,4 +4,5 @@
 
 # Remove Scoreboard(s)
 scoreboard objectives remove ctf
+scoreboard objectives remove ctf.id
 scoreboard objectives remove ctf.deaths
