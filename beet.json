@@ -17,7 +17,6 @@
   },
   "pipeline": [
     "build.main",
-    "plugins.advancement_icon",
     "beet.contrib.installation_advancement",
     "mecha",
     "beet.contrib.minify_function",
