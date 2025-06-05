@@ -22,16 +22,16 @@ def advancement_icon(ctx: Context, opts: AdvancementIconOptions):
         ctx.meta["installation_advancement"] = {}
 
     ctx.meta["installation_advancement"]["icon"] = create_icon_meta(namespace)
-    ctx.assets[f"{namespace}:logo"] = create_item_model(namespace)
-    ctx.assets[f"{namespace}:item/logo"] = create_model(namespace)
-    ctx.assets[f"{namespace}:item/logo"] = create_texture(opts.texture_source)
+    ctx.assets[f"{namespace}:icon"] = create_item_model(namespace)
+    ctx.assets[f"{namespace}:item/icon"] = create_model(namespace)
+    ctx.assets[f"{namespace}:item/icon"] = create_texture(opts.texture_source or "src/pack.png")
 
 
 def create_icon_meta(namespace: str):
     return dict(
         {
             "id": "minecraft:paper",
-            "components": {"item_model": f"{namespace}:logo"},
+            "components": {"item_model": f"{namespace}:icon"},
         }
     )
 
@@ -41,7 +41,7 @@ def create_item_model(namespace: str):
         {
             "model": {
                 "type": "minecraft:model",
-                "model": f"{namespace}:item/logo",
+                "model": f"{namespace}:item/icon",
             }
         }
     )
@@ -51,7 +51,7 @@ def create_model(namespace: str):
     return Model(
         {
             "parent": "item/generated",
-            "textures": {"layer0": f"{namespace}:item/logo"},
+            "textures": {"layer0": f"{namespace}:item/icon"},
         }
     )
 
