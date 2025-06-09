@@ -1,3 +1,9 @@
+__all__ = [
+    "AdvancementIconOptions",
+    "advancement_icon",
+]
+
+
 from typing import Optional
 
 from beet import Context, ItemModel, Model, Texture, PluginOptions, configurable
@@ -24,7 +30,9 @@ def advancement_icon(ctx: Context, opts: AdvancementIconOptions):
     ctx.meta["installation_advancement"]["icon"] = create_icon_meta(namespace)
     ctx.assets[f"{namespace}:icon"] = create_item_model(namespace)
     ctx.assets[f"{namespace}:item/icon"] = create_model(namespace)
-    ctx.assets[f"{namespace}:item/icon"] = create_texture(opts.texture_source or "src/pack.png")
+    ctx.assets[f"{namespace}:item/icon"] = create_texture(
+        opts.texture_source or "src/pack.png"
+    )
 
 
 def create_icon_meta(namespace: str):
