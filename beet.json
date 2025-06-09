@@ -22,5 +22,9 @@
     "beet.contrib.minify_function",
     "beet.contrib.minify_json"
   ],
-  "meta": {}
+  "meta": {
+    "installation_advancement": {
+      "project_advancement_path": "beet_template:installed"
+    }
+  }
 }
