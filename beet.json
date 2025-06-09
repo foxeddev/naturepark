@@ -1,4 +1,5 @@
 {
+  "id": "beet_template",
   "name": "Beet Template",
   "version": "1.1.0",
   "description": "A pre-configured template to quickly set up your Minecraft Beet project.",
@@ -18,6 +19,7 @@
     "build.main",
     "plugins.advancement_icon",
     "beet.contrib.installation_advancement",
+    "plugins.installation_function",
     "mecha",
     "beet.contrib.minify_function",
     "beet.contrib.minify_json"
