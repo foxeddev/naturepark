@@ -12,6 +12,8 @@ from beet.core.utils import JsonDict, normalize_string
 
 class InstallationFunctionOptions(PluginOptions):
     pack_namespace: Optional[str] = None
+    advancement_path: Optional[str] = None
+    function_path: Optional[str] = None
 
 
 def beet_default(ctx: Context):
@@ -22,7 +24,9 @@ def beet_default(ctx: Context):
 def installation_function(ctx: Context, opts: InstallationFunctionOptions):
 
     namespace = opts.pack_namespace or normalize_string(ctx.project_id)
+    advancement_path = opts.advancement_path or f"{namespace}:installed"
+    function_path = opts.function_path or f"#{namespace}:installed"
 
-    ctx.data.advancements[f"{namespace}:installed"].data["rewards"] = {
-        "function": f"{namespace}:installed"
+    ctx.data.advancements[advancement_path].data["rewards"] = {
+        "function": {function_path}
     }
