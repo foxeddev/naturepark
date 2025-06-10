@@ -19,11 +19,6 @@
       ]
     }
   },
-  "resource_pack": {
-    "load": [
-      "src"
-    ]
-  },
   "pipeline": [
     "build.main",
     "beet.contrib.installation_advancement",
