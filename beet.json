@@ -25,7 +25,10 @@
   ],
   "meta": {
     "installation_advancement": {
-      "project_advancement_path": "beet_template:installed"
+      "project_advancement_path": "beet_template:installed",
+      "icon": {
+        "id": "minecraft:oak_sapling"
+      }
     }
   }
 }
