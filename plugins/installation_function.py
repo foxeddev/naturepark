@@ -25,7 +25,7 @@ def installation_function(ctx: Context, opts: InstallationFunctionOptions):
 
     namespace = opts.pack_namespace or normalize_string(ctx.project_id)
     advancement_path = opts.advancement_path or f"{namespace}:installed"
-    function_path = opts.function_path or f"#{namespace}:installed"
+    function_path = opts.function_path or f"{namespace}:installed"
 
     ctx.data.advancements[advancement_path].data["rewards"] = {
         "function": f"{function_path}"
