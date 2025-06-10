@@ -3,7 +3,7 @@
   "name": "Nature Park",
   "version": "1.0.0",
   "description": "",
-  "author": "Rotsteinfuchs",
+  "author": "FoxedDev",
   "output": "build",
   "require": [
     "bolt",
