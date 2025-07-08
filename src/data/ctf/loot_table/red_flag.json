@@ -7,7 +7,7 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "minecraft:armor_stand",
+          "name": "minecraft:red_banner",
           "functions": [
             {
               "function": "set_count",
@@ -16,24 +16,25 @@
             {
               "function": "set_components",
               "components": {
-                "minecraft:item_model": "minecraft:red_banner",
-                "minecraft:entity_data": {
-                  "id": "minecraft:armor_stand",
-                  "Silent": 1,
-                  "Invulnerable": 1,
-                  "Invisible": 1,
-                  "PersistenceRequired": 1,
-                  "Tags": [
-                    "ctf.red_flag_spawner"
-                  ]
-                },
-                "minecraft:can_place_on": [{}],
+                "minecraft:can_place_on": [
+                  {}
+                ],
                 "minecraft:tooltip_display": {
                   "hidden_components": [
                     "can_place_on"
                   ]
                 }
               }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "color": "red",
+                  "italic": false,
+                  "text": "Red Flag"
+                }
+              ]
             }
           ]
         }
