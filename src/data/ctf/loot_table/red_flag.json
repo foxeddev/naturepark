@@ -23,37 +23,17 @@
                   "Invulnerable": 1,
                   "Invisible": 1,
                   "PersistenceRequired": 1,
-                  "Tags": ["ctf.red_flag_spawner"]
+                  "Tags": [
+                    "ctf.red_flag_spawner"
+                  ]
+                },
+                "minecraft:can_place_on": [{}],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "can_place_on"
+                  ]
                 }
-              },
-              "minecraft:can_place_on": {
-                "predicates": [
-                  {
-                    "blocks": "#"
-                  }
-                ],
-                "show_in_tooltip": false
               }
-            },
-            {
-              "function": "set_name",
-              "name": [
-                {
-                  "color": "red",
-                  "italic": false,
-                  "text": "█ "
-                },
-                {
-                  "color": "white",
-                  "italic": false,
-                  "text": "Red Flag"
-                },
-                {
-                  "color": "red",
-                  "italic": false,
-                  "text": " █"
-                }
-              ]
             }
           ]
         }

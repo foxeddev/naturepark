@@ -23,15 +23,15 @@
                   "Invulnerable": 1,
                   "Invisible": 1,
                   "PersistenceRequired": 1,
-                  "Tags": ["ctf.blue_flag_spawner"]
+                  "Tags": [
+                    "ctf.blue_flag_spawner"
+                  ]
                 },
-                "minecraft:can_place_on": {
-                  "predicates": [
-                    {
-                      "blocks": "#"
-                    }
-                  ],
-                  "show_in_tooltip": false
+                "minecraft:can_place_on": [{}],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "can_place_on"
+                  ]
                 }
               }
             }
