@@ -9,3 +9,8 @@ execute as @n[type=marker,tag=ctf.field] at @s with entity @s data.ctf:
 
     $execute positioned ~ ~-2 ~ run function ctf:load_map {map:"$(map)/team_areas"}
     $function ctf:load_map {map:"$(map)/open"}
+
+    # Reset data values
+
+    data remove entity @s data.ctf.red_flag_placed
+    data remove entity @s data.ctf.blue_flag_placed
