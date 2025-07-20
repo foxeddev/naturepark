@@ -1,5 +1,5 @@
 kill @e[type=marker,tag=ctf.field,distance=..0.5]
-$summon marker ~ ~ ~ {Tags:["ctf.field","ctf.new"],data:{ctf:{map:$(map)}}}
+$summon marker ~ ~ ~ {Tags:["ctf.field","ctf.new"],Scores:{ctf.state:0}data:{ctf:{map:$(map)}}}
 execute as @e[type=marker,tag=ctf.new]:
 
     # Find unused field id
