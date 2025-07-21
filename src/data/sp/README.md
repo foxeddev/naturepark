@@ -1,6 +1,6 @@
 # 🪧 Signposts
 
-A system to create clickable signs that teleport players to the location.
+A system to create clickable signs that teleport players to a location.
 
 ## Usage
 
