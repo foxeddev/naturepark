@@ -4,7 +4,7 @@ tag @s add sp.current_player
 
 $execute as @e[type=marker,tag=sp.location] if data entity @s {data:{sp:{id:"$(to)"}}} run tag @s add sp.current_marker
 
-execute as @e[type=marker,tag=sp.current_marker,limit=1]:
+as @e[type=marker,tag=sp.current_marker,limit=1]:
     tp @a[tag=sp.current_player] @s
     data modify storage sp:temp name set from entity @s data.sp.name
     title @a[tag=sp.current_player] actionbar [{"color":"green","text":"Teleported to: "},{"storage":"sp:temp","nbt":"name"}]

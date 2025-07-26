@@ -1,6 +1,6 @@
 kill @e[type=marker,tag=ctf.field,distance=..0.5]
 $summon marker ~ ~ ~ {Tags:["ctf.field","ctf.new"],Scores:{ctf.state:0}data:{ctf:{map:$(map)}}}
-execute as @e[type=marker,tag=ctf.new]:
+as @e[type=marker,tag=ctf.new]:
 
     # Find unused field id
 
@@ -9,9 +9,9 @@ execute as @e[type=marker,tag=ctf.new]:
     function ./create_field/loop:
         scoreboard players add #i temp 1
         scoreboard players reset #used temp
-        execute as @e[tag=ctf.field] if score @s ctf.id = #i temp:
+        as @e[tag=ctf.field] if score @s ctf.id = #i temp:
             scoreboard players set #used temp 1
-        execute if score #used temp matches 1 run function ./create_field/loop
+        if score #used temp matches 1 run function ./create_field/loop
 
     function ./create_field/loop
     scoreboard players operation @s ctf.id = #i temp
