@@ -11,7 +11,8 @@ as @a[tag=bln.has_balloon]:
 
     data modify storage bln:temp UUID set from entity @s UUID
     as @e[type=pig,tag=bln.pig] at @s:
-        store success score #success temp run data modify storage bln:temp UUID set from entity @s UUID
+        store success score #success temp:
+            data modify storage bln:temp UUID set from entity @s UUID
         if score #success temp matches 1:
 
             # Update balloon block displays
@@ -30,5 +31,9 @@ as @a[tag=bln.has_balloon]:
             if entity @a[tag=bln.current_player,distance=8..]:
                 function ./destroy
                 tag @a[tag=bln.current_player] remove bln.has_balloon
+
+        scoreboard players reset #success temp
+
+    data remove storage bln:temp UUID
 
     tag @s remove bln.current_player
