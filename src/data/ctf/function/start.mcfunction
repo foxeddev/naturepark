@@ -25,11 +25,13 @@ as @n[type=marker,tag=ctf.field] at @s:
         tag @s add ctf.player
 
     as @a[tag=ctf.current_player,tag=ctf.team_red] at @s:
+        team join ctf.red
         particle dust{color:[1.000,0.000,0.000],scale:1} ~ ~1.5 ~ 0.1 0.1 0.1 0 64 force @s
         title @s subtitle {"color":"red","text":"Capture the flag | Team Red"}
         title @s title {"color":"red","nbt":"m.name","storage":"ctf:temp"}
 
     as @a[tag=ctf.current_player,tag=ctf.team_blue] at @s:
+        team join ctf.blue
         particle dust{color:[0.000,0.000,1.000],scale:1} ~ ~1.5 ~ 0.1 0.1 0.1 0 64 force @s
         title @s subtitle {"color":"blue","text":"Capture the flag | Team Blue"}
         title @s title {"color":"blue","nbt":"m.name","storage":"ctf:temp"}
@@ -44,6 +46,6 @@ as @n[type=marker,tag=ctf.field] at @s:
 
     scoreboard players set @s ctf.state 1
 
-data remove storage ctf:temp m
-scoreboard players reset #id temp
-tag @a[tag=ctf.current_player] remove ctf.current_player
+    data remove storage ctf:temp m
+    scoreboard players reset #id temp
+    tag @a[tag=ctf.current_player] remove ctf.current_player
