@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "armor_stand_placed": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"ctf.player\"]}"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "armor_stand_placed"
+    ]
+  ],
+  "rewards": {
+    "function": "ctf:armor_stand_placed"
+  }
+}
