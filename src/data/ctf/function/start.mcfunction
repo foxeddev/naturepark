@@ -4,12 +4,10 @@ as @n[type=marker,tag=ctf.field] at @s:
         tag @s add ctf.current_player
         tag @s remove ctf.queue
 
-    scoreboard players reset #id temp
-
     data modify storage ctf:temp map set from entity @s data.ctf
 
-    kill @e[type=armor_stand,tag=ctf.red_flag]
-    kill @e[type=armor_stand,tag=ctf.blue_flag]
+    kill @e[tag=ctf.red_flag]
+    kill @e[tag=ctf.blue_flag]
 
     ## Create wall
 
@@ -96,5 +94,6 @@ as @n[type=marker,tag=ctf.field] at @s:
 
     scoreboard players set @s ctf.state 1
 
+    scoreboard players reset #id temp
     data remove storage ctf:temp map
     tag @a[tag=ctf.current_player] remove ctf.current_player
