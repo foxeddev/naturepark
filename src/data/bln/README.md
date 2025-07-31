@@ -14,3 +14,4 @@ Example:
 
 ```mcfunction
 /give @p command_block[custom_data={bln:{block:"command_block"}}] 1
+```
