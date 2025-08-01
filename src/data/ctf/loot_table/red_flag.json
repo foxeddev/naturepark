@@ -7,12 +7,8 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "minecraft:red_banner",
+          "name": "minecraft:armor_stand",
           "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
             {
               "function": "set_components",
               "components": {
@@ -23,6 +19,13 @@
                   "hidden_components": [
                     "can_place_on"
                   ]
+                },
+                "minecraft:entity_data": {
+                  "id": "minecraft:armor_stand",
+                  "Tags": [
+                    "ctf.red_flag"
+                  ],
+                  "Invisible": true
                 }
               }
             },
