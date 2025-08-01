@@ -25,10 +25,14 @@ function ./armor_stand_placed/schedule:
 
                     if data entity @s {OnGround:1b} at @s:
                         kill @s
-                        as @e[type=marker,tag=ctf.blue_flag] if score @s ctf.id = #id temp:
-                            kill @s 
-                        summon marker ~-0.5 ~ ~-0.5 {Tags:["ctf.red_flag"]}
-                        as @e[type=marker,tag=ctf.red_flag]:
+                        as @e[tag=ctf.red_flag] if score @s ctf.id = #id temp:
+                            kill @s
+
+                        summon marker ~ ~ ~ {Tags:["ctf.red_flag"]}
+                        summon block_display ~ ~ ~ {Tags:["ctf.red_flag"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.5f,0f,-0.5f],scale:[1f,1f,1f]},block_state:{Name:"minecraft:red_banner"}}
+                        data modify entity @e[type=block_display,tag=ctf.red_flag,limit=1] Rotation set from entity @s Rotation
+
+                        as @e[tag=ctf.red_flag]:
                             scoreboard players operation @s ctf.id = #id temp
 
             if entity @s[tag=ctf.team_blue] at @s:
