@@ -61,6 +61,12 @@ as @n[type=marker,tag=ctf.field] at @s:
     as @a[tag=ctf.current_player,tag=ctf.team_blue]:
         title @s title {"color":"blue","text":"Start!"}
 
+    as @e[type=marker,tag=ctf.red_flag] if score @s ctf.id = #id temp at @s:
+        summon interaction ~ ~ ~ {width:1f,height:2f,response:1b,Tags:["ctf.red_flag"]}
+
+    as @e[type=marker,tag=ctf.blue_flag] if score @s ctf.id = #id temp at @s:
+        summon interaction ~ ~ ~ {width:1f,height:2f,response:1b,Tags:["ctf.blue_flag"]}
+
     scoreboard players set @s ctf.state 2
 
     data remove storage ctf:temp m
