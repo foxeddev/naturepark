@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "flag_hit": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"ctf.player\"]}"
+        },
+        "entity": {
+          "type": "minecraft:interaction"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "flag_hit"
+    ]
+  ],
+  "rewards": {
+    "function": "ctf:flag_hit"
+  }
+}
